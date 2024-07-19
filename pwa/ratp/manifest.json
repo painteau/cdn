@@ -1,6 +1,7 @@
 {
    "name": "Bus Stop",
    "short_name": "Bus Stop",
+   "display": "standalone",
    "icons": [{
       "src": "https://cdn.painteau.com/img/ratp/logo-bus.png",
       "sizes": "192x192"}
