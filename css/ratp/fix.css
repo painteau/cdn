@@ -16,8 +16,8 @@ table{height:100%;margin-bottom:0 !important;}
 .tr-normal{height:13%;max-height:13%;}
 .tr-normal td, .tr-trafic .tdfull{vertical-align:middle!important}
 .tr-normal .td1 p, .tr-normal .td2 p{ margin-top: auto;
-margin-bottom: auto; color:white;font-family:Verdana;font-weight:bold;font-size:22px;}
-.tr-normal .td2{width:50%;}
+margin-bottom: auto; color:black;font-family:Verdana;font-weight:bold;font-size:22px;}
+.tr-normal .td2{color:white; width:50%;}
 .tr-normal .td3{text-align:right;}
 .tr-normal .td3 p{color:black;font-family:Verdana;font-weight:bold;font-size:22px;margin:0 0 0 0;}
 .tr-trafic{height:5%;background-color:#FACC2E;}
@@ -33,6 +33,6 @@ margin-bottom: auto; color:white;font-family:Verdana;font-weight:bold;font-size:
     text-align: center;
 }
 .tr-trafic .tdfull p{color:black;font-family:Calibri;font-weight:bold;font-size:16px;margin:0px;}
-.minutes {
+.minutes p {
     color: white;
 }
