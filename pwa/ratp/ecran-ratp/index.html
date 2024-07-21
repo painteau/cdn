@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="30">
+    <title>Parc du Tremblay</title>
+    <link href="https://cdn.painteau.com/css/ratp/bootstrap-cosmo.css" rel="stylesheet"/>
+    <link href="https://cdn.painteau.com/css/ratp/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="https://cdn.painteau.com/css/ratp/fix.css" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <div id="content"></div>
+<table class="table"><tbody><tr class="tr-header"><td class="td0"><img src="https://cdn.painteau.com/img/ratp/logo-bus.png" alt="" class="rer-logo" /></td><td class="td1"><p>Station: Parc du Tremblay</p></td><td colspan="3" class="td2-header"><p id="time">23:03</p></td></tr>
+            
+
+<tr class="tr-normal"><td class="td0"><img src="img/ratp/logo-bus-220.png" alt="" class="rer-ligne" /></td><td class="td1"><p>Hotel de Ville de Créteil RER</p></td><td class="td2"><p><span class="horaire">99</span> <span class="horaire">99</span></p></td><td class="td3 "></td></tr>
+
+<tr class="tr-trafic"><td class="tdfull" colspan="4"><p><i>Attention traffic</i></p></td></tr></tbody></table>
+    
+    <script src="https://cdn.painteau.com/js/ratp/jquery-1.9.1.min.js"></script>
+    <script src="https://cdn.painteau.com/js/ratp/bootstrap.min.js"></script>
+        <script>
+var d = new Date();
+datetext = d.toTimeString();
+time = datetext.split(' ')[0]
+document.getElementById("time").innerHTML = time.split(':')[0]+":"+time.split(':')[1];
+    </script>
+  </body>
+</html>
