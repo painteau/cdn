@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "models": {
+    "medium": {
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin",
+      "size_bytes": 1528006304,
+      "sha256": "6c14d5adee5f86394037b4e4e8b59f1673b6cee10e3cf0b11bbdbee79c156208",
+      "description": "Whisper medium — rapide, excellent français"
+    },
+    "large-v3": {
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin",
+      "size_bytes": 3094621944,
+      "sha256": "64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2",
+      "description": "Whisper large-v3 — précision maximale"
+    }
+  }
+}
