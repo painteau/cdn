@@ -40,6 +40,13 @@
       "url": "https://cdn.breizhzion.com/dictum/whisper.dll",
       "size_bytes": 431616,
       "sha256": "d494bb4d5602ad74edd34d4ce82a893ed5bd130ceb0e42316ac404a2cf1278c1"
+    },
+    "whisper-stream.exe": {
+      "url": "https://cdn.breizhzion.com/dictum/whisper-stream.exe",
+      "size_bytes": 390656,
+      "sha256": "c9becc2c3d9add767da664b54f00a7f620eb09ff5e240aa16fc8ae7a89ee73c9",
+      "optional": true,
+      "description": "Mode streaming temps réel (live dictation)"
     }
   }
 }
