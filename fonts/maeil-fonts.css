@@ -1,0 +1,40 @@
+/* Polices auto-hébergées pour Maeil (site vitrine) — subset latin uniquement
+   (couvre le français : tous les caractères accentués sont dans U+0000-00FF).
+   Le wordmark coréen "매일" est fourni en image (logo.png), pas en texte web-font. */
+
+/* Fraunces : fichier variable (axes opsz/wght), couvre 100-900 en un seul fichier —
+   titres, coherent avec l'esprit "encre/calligraphie" de l'identite Maeil */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://cdn.breizhzion.com/fonts/fraunces/Fraunces-Variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://cdn.breizhzion.com/fonts/fraunces/Fraunces-Italic-Variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* General Sans : corps de texte, coherent avec le reste des sites Breizhzion */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('https://cdn.breizhzion.com/fonts/general-sans/GeneralSans-Variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'General Sans';
+  font-style: italic;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('https://cdn.breizhzion.com/fonts/general-sans/GeneralSans-VariableItalic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
