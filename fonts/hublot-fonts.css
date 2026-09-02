@@ -1,6 +1,13 @@
 /* Polices auto-hébergées pour Hublot (site vitrine) — remplace l'appel à
    fonts.googleapis.com. Subset latin uniquement (le site est en anglais,
-   pas d'accents hors U+0000-00FF). */
+   pas d'accents hors U+0000-00FF). 
+   URLS RELATIVES A LA RACINE, ET NON LE DOMAINE EN DUR : ce CDN est servi sur les
+   14 domaines de l'association. Une URL relative dans une feuille CSS se resout par
+   rapport a la FEUILLE et non au document, donc `/fonts/...` designe toujours le
+   domaine qui a servi ce fichier. Chaque site charge ainsi le CDN depuis SON domaine et
+   tout reste sur la meme origine, ce qui evite un saut inter-domaine et la contrainte
+   CORS sur les polices. Corrige le 2026-09-02.
+*/
 
 /* Fraunces : fichier variable (axes opsz/wght), couvre 100-900 en un seul
    fichier — titres, déjà utilisé par maeil-fonts.css */
@@ -9,7 +16,7 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url('https://cdn.breizhzion.com/fonts/fraunces/Fraunces-Variable.woff2') format('woff2');
+  src: url('/fonts/fraunces/Fraunces-Variable.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -19,7 +26,7 @@
   font-style: normal;
   font-weight: 100 700;
   font-display: swap;
-  src: url('https://cdn.breizhzion.com/fonts/ibm-plex-sans/IBMPlexSans-Variable.woff2') format('woff2');
+  src: url('/fonts/ibm-plex-sans/IBMPlexSans-Variable.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -30,7 +37,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('https://cdn.breizhzion.com/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');
+  src: url('/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -38,7 +45,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('https://cdn.breizhzion.com/fonts/ibm-plex-mono/IBMPlexMono-Medium.woff2') format('woff2');
+  src: url('/fonts/ibm-plex-mono/IBMPlexMono-Medium.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -46,6 +53,6 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('https://cdn.breizhzion.com/fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff2') format('woff2');
+  src: url('/fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
