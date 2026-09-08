@@ -12,6 +12,14 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+### Ajouté
+
+- **`fonts/noisecrypt-fonts.css`**, pour le site vitrine de NoiseCrypt : Fragment Mono en
+  titrage, IBM Plex Sans en corps, IBM Plex Mono pour les commandes. La monospace en display
+  n'est pas décorative, l'identité visuelle de l'outil étant la grille de cellules noires et
+  blanches que son codec dessine à l'écran. Plex Sans porte un manuel, et Plex Mono est conçu
+  pour aller avec lui. URL relatives, comme toutes les feuilles d'ici.
+
 ### Corrigé
 
 - **Convention de fins de ligne du parc posée dans `.gitattributes`.** Le bloc `run:` d'un
