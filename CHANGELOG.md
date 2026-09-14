@@ -14,6 +14,18 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ### Ajouté
 
+- **`fonts/breme-fonts.css`**, pour le site vitrine de Brême : Fraunces en titrage, Space Mono
+  pour les libellés et les chiffres. Ce sont **exactement les deux familles de l'application
+  mobile**, et c'est le point : le site et l'app sont le même produit, une police différente entre
+  les deux se voit immédiatement. Esprit « grand livre de compte », cohérent avec la direction
+  artistique « Grand Livre Hanséatique » de l'app.
+- Les blocs `@font-face` sont **extraits** de `maeil-fonts.css` (Fraunces) et `patelin-fonts.css`
+  (Space Mono) plutôt que réécrits : une plage `unicode-range` recopiée de travers fait
+  silencieusement tomber les caractères accentués sur un sous-ensemble, défaut qu'aucune relecture
+  n'attrape. URL relatives, comme toutes les feuilles d'ici.
+
+### Ajouté
+
 - **`fonts/noisecrypt-fonts.css`**, pour le site vitrine de NoiseCrypt : Fragment Mono en
   titrage, IBM Plex Sans en corps, IBM Plex Mono pour les commandes. La monospace en display
   n'est pas décorative, l'identité visuelle de l'outil étant la grille de cellules noires et
