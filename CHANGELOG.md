@@ -14,6 +14,13 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ### Ajouté
 
+- `fonts/cedule-fonts.css` : polices de l'administration Cédule. IM Fell English SC pour les
+  intitulés, EB Garamond pour le texte, Fragment Mono pour les heures. **Blocs extraits par script**
+  de `nopost-fonts.css`, `hucheor-fonts.css` et `noisecrypt-fonts.css` plutôt que réécrits, et les
+  17 fichiers référencés ont été vérifiés présents sur le disque avant commit.
+
+### Ajouté
+
 - **`fonts/breme-fonts.css`**, pour le site vitrine de Brême : Fraunces en titrage, Space Mono
   pour les libellés et les chiffres. Ce sont **exactement les deux familles de l'application
   mobile**, et c'est le point : le site et l'app sont le même produit, une police différente entre
