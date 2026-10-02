@@ -12,6 +12,8 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-02
+
 ### Ajouté
 
 - **`fonts/mome-fonts.css`** et **`fonts/manrope/`** (quatre graisses 400/500/700/800 en woff2,
