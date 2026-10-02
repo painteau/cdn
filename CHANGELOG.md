@@ -12,6 +12,17 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+### Ajouté
+
+- **`fonts/mome-fonts.css`** et **`fonts/manrope/`** (quatre graisses 400/500/700/800 en woff2,
+  convertis depuis `@expo-google-fonts/manrope`, licence OFL jointe), pour le site de Môme : Fraunces
+  en titrage (blocs extraits de `breme-fonts.css`, pas réécrits) et Manrope pour le texte, soit les
+  deux familles de l'application. ⚠️ **Cette feuille n'existait pas** alors que la page de
+  confidentialité de l'API de Môme la référençait : le CDN répond `200` avec le texte « oui bonjour »
+  (`text/html`) pour tout chemin absent, donc aucune erreur ne se voyait et la page tombait sur
+  Georgia en silence. Un `200` ne prouve pas qu'un fichier existe sur ce CDN, vérifier le
+  `Content-Type`.
+
 ### Modifié
 
 - **`actions/checkout` et `actions/setup-node` passent en v7** dans les workflows : les versions
