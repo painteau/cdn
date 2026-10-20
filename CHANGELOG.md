@@ -12,6 +12,14 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+### Ajouté
+
+- **`fonts/nordwand-mono.css`** et **`fonts/nordwand-mono/`** : Nordwand Mono 1.3.1
+  (`tywr/Nordwand-Mono`, licence OFL jointe), 14 styles woff2 de la release officielle, de Thin à
+  Bold, droit et italique. Feuille générée par script, les 14 fichiers référencés vérifiés présents.
+  ⚠️ **Couverture du français incomplète** (300 glyphes) : ni « », ni €, ni espace insécable, ni Œ
+  et Ÿ. Toujours déclarer une police de repli derrière elle.
+
 ## [0.2.0] - 2026-10-02
 
 ### Ajouté
