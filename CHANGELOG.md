@@ -12,6 +12,8 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-20
+
 ### Ajouté
 
 - **`fonts/nordwand-mono.css`** et **`fonts/nordwand-mono/`** : Nordwand Mono 1.3.1
