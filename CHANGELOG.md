@@ -12,6 +12,8 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-10-22
+
 ### Ajouté
 
 - **`fonts/cartulaire-fonts.css`** : feuille du site vitrine de Cartulaire, Nordwand Mono (titres,
