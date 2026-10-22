@@ -1,0 +1,109 @@
+/* Polices auto-hebergees pour Cartulaire (site vitrine cartulaire.breizhzion.com).
+
+   Identite "La Salle des rouleaux" (admin/docs/cartulaire.md) : Nordwand Mono pour les titres,
+   les cotes et les chiffres, Archivo pour le texte courant.
+
+   ATTENTION, NORDWAND MONO N'A QUE 300 GLYPHES : ni guillemets francais (U+00AB, U+00BB), ni
+   espace insecable (U+00A0, U+202F), ni euro, ni capitales OE et Y trema (U+0152, U+0178), voir
+   nordwand-mono.css. Elle ne porte donc JAMAIS le texte
+   courant, et toute pile qui la nomme doit continuer par une monospace complete :
+       font-family: 'Nordwand Mono', 'JetBrains Mono', ui-monospace, monospace;
+   JetBrains Mono est incluse ici pour cela seulement : c'est elle qui dessine les guillemets et
+   les espaces fines quand ils tombent dans un titre en Nordwand.
+
+   Blocs EXTRAITS par script de nordwand-mono.css, Archivo/Archivo.css et justmakeq-fonts.css,
+   jamais reecrits. URLS RELATIVES A LA RACINE : ce CDN est servi sur les domaines de
+   l'association, une URL relative se resout par rapport a la FEUILLE.
+*/
+
+/* Nordwand Mono : titres, cotes, chiffres (200, 300 et leurs italiques, 400, 500). */
+@font-face {
+  font-family: 'Nordwand Mono';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/fonts/nordwand-mono/NordwandMono-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nordwand Mono';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/fonts/nordwand-mono/NordwandMono-ExtraLightItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nordwand Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/nordwand-mono/NordwandMono-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nordwand Mono';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/nordwand-mono/NordwandMono-LightItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nordwand Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/nordwand-mono/NordwandMono-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nordwand Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/nordwand-mono/NordwandMono-Medium.woff2') format('woff2');
+}
+
+/* Archivo : texte courant (400, 500, 500 italique, 600). */
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Archivo/Archivo-Regular/Archivo-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Archivo/Archivo-Medium/Archivo-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Archivo/Archivo-MediumItalic/Archivo-MediumItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Archivo/Archivo-SemiBold/Archivo-SemiBold.woff2") format("woff2");
+}
+
+/* JetBrains Mono : repli des glyphes absents de Nordwand (guillemets, espaces fines, OE). */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

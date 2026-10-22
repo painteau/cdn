@@ -12,6 +12,13 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+### Ajouté
+
+- **`fonts/cartulaire-fonts.css`** : feuille du site vitrine de Cartulaire, Nordwand Mono (titres,
+  cotes, chiffres), Archivo (texte courant) et JetBrains Mono en repli des glyphes que Nordwand n'a
+  pas (guillemets français, espaces fines, Œ). 12 blocs extraits par script des feuilles
+  existantes, les 12 fichiers référencés vérifiés présents.
+
 ## [0.3.0] - 2026-10-20
 
 ### Ajouté
