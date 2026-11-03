@@ -12,6 +12,9 @@ L'historique git reste la source de vérité pour ce qui précède.
 
 ## [Unreleased]
 
+### Modifié
+- `.gitignore` : toute variante `.env.*` est ignorée, sauf `.env.example`. Une copie de sauvegarde `.env.bak-*` porte les mêmes secrets que `.env` (règle de parc du 2026-11-03).
+
 ## [0.4.0] - 2026-10-22
 
 ### Ajouté
